@@ -1,3 +1,17 @@
 from django.contrib import admin
+from .models import Dish, Cook, DishType
 
-# Register your models here.
+admin.site.register(DishType)
+
+@admin.register(Dish)
+class DishAdmin(admin.ModelAdmin):
+    list_display = ("name", "description", "price", "dish_type")
+    list_filter = ("price", "dish_type")
+    search_fields = ("name", "description")
+
+
+@admin.register(Cook)
+class CookAdmin(admin.ModelAdmin):
+    list_display = ("username", "years_of_experience")
+    list_filter = ["years_of_experience"]
+    search_fields = ["username"]
