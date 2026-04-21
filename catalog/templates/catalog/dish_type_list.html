@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Dishes{% endblock %}
+
+{% block content %}
+<table border="1" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Dish Types 🍴</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for type in dish_type_list %}
+        <tr>
+            <td>{{ type.name }}</td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

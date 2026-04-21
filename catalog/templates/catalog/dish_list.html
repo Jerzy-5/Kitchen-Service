@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Dishes{% endblock %}
+
+{% block content %}
+<table border="1" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Name 🍽️</th>
+            <th>Description 📝</th>
+            <th>Price 💰</th>
+            <th>Dish Type 🍴</th>
+            <th>Actions ⚙️</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for dish in dish_list %}
+        <tr>
+            <td>{{ dish.name }}</td>
+            <td>{{ dish.description }}</td>
+            <td>{{ dish.price }}</td>
+            <td>{{ dish.dish_type }}</td>
+
+            <td>
+                <a href="{% url 'dish-detail' dish.pk %}"><button>Details</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

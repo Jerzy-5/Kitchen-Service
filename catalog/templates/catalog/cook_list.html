@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Cooks{% endblock %}
+
+{% block content %}
+<table border="1" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Username 🧑‍🍳</th>
+            <th>Years of Experience ⭐</th>
+            <th>Actions 🔍</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for cook in cook_list %}
+        <tr>
+            <td>{{ cook.username }} </td>
+            <td>{{ cook.years_of_experience }} </td>
+            <td>
+                <a href="{% url 'cook-detail' cook.pk %}"><button>Details</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}
