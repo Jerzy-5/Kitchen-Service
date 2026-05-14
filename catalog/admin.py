@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Dish, Cook, DishType
+from .models import Dish, Cook, DishType, Task
 
 admin.site.register(DishType)
 
@@ -15,3 +15,9 @@ class CookAdmin(admin.ModelAdmin):
     list_display = ("username", "years_of_experience")
     list_filter = ["years_of_experience"]
     search_fields = ["username"]
+
+@admin.register(Task)
+class CookAdmin(admin.ModelAdmin):
+    list_display = ("title", "deadline", "cook")
+    list_filter = ["deadline"]
+    search_fields = ["title"]

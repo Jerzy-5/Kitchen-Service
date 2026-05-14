@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.utils import timezone
 
 class DishType(models.Model):
     name = models.CharField(max_length=255, unique=True)
@@ -26,6 +27,13 @@ class Dish(models.Model):
         return f"{self.description}"
 
 
-
-
-
+class Task(models.Model):
+    title = models.CharField(max_length=255)
+    completed = models.BooleanField(default=False)
+    deadline = models.DateTimeField()
+    cook = models.ForeignKey(Cook,
+                                  on_delete=models.CASCADE,
+                                  related_name="tasks")
+    @property
+    def is_overdue(self):
+        return self.deadline < timezone.now()

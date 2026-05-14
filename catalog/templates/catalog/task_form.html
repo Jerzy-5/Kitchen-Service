@@ -1,3 +1,38 @@
-{%  extends "base.html" %}
+{% extends "base.html" %}
 
-{% block title %}Dishes{% endblock %}
+{% block title %}
+Create Task
+{% endblock %}
+
+{% block content %}
+
+<div style="max-width: 500px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #fafafa;">
+
+    <h2 style="text-align: center; margin-bottom: 20px;">
+        ➕ Create Task
+    </h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+            {{ form.as_p }}
+        </div>
+
+        <button type="submit"
+                style="width: 100%; margin-top: 15px; padding: 10px;
+                       background: #4CAF50; color: white; border: none;
+                       border-radius: 6px; cursor: pointer;">
+            Create Task
+        </button>
+    </form>
+
+    <div style="text-align: center; margin-top: 15px;">
+        <a href="{% url 'home' %}" style="text-decoration: none; color: #555;">
+            ← Back to homepage
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}
