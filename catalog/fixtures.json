@@ -1,0 +1,222 @@
+[
+  {
+    "model": "catalog.dish",
+    "pk": 1,
+    "fields": {
+      "name": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta with meat sauce",
+      "price": 25.0,
+      "dish_type": 1,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 2,
+    "fields": {
+      "name": "Margherita Pizza",
+      "description": "Tomato, mozzarella, basil",
+      "price": 22.0,
+      "dish_type": 1,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 3,
+    "fields": {
+      "name": "Caesar Salad",
+      "description": "Crispy lettuce with Caesar dressing",
+      "price": 18.0,
+      "dish_type": 1,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 4,
+    "fields": {
+      "name": "Grilled Chicken",
+      "description": "Chicken breast with herbs",
+      "price": 30.0,
+      "dish_type": 1,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 5,
+    "fields": {
+      "name": "Beef Burger",
+      "description": "Juicy beef burger with cheese",
+      "price": 28.0,
+      "dish_type": 1,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 6,
+    "fields": {
+      "name": "Tomato Soup",
+      "description": "Creamy tomato soup",
+      "price": 12.0,
+      "dish_type": 1,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 7,
+    "fields": {
+      "name": "Sushi Set",
+      "description": "Assorted sushi platter",
+      "price": 45.0,
+      "dish_type": 1,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 8,
+    "fields": {
+      "name": "Ramen",
+      "description": "Japanese noodle soup",
+      "price": 35.0,
+      "dish_type": 1,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 9,
+    "fields": {
+      "name": "Pancakes",
+      "description": "Fluffy pancakes with syrup",
+      "price": 15.0,
+      "dish_type": 2,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 10,
+    "fields": {
+      "name": "Cheesecake",
+      "description": "Creamy cheesecake slice",
+      "price": 18.0,
+      "dish_type": 2,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 11,
+    "fields": {
+      "name": "Apple Pie",
+      "description": "Traditional baked apple pie",
+      "price": 16.0,
+      "dish_type": 2,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 12,
+    "fields": {
+      "name": "Chocolate Cake",
+      "description": "Rich chocolate layered cake",
+      "price": 20.0,
+      "dish_type": 2,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 13,
+    "fields": {
+      "name": "Ice Cream Sundae",
+      "description": "Ice cream with toppings",
+      "price": 14.0,
+      "dish_type": 2,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 14,
+    "fields": {
+      "name": "Waffles",
+      "description": "Crispy waffles with fruits",
+      "price": 17.0,
+      "dish_type": 2,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 15,
+    "fields": {
+      "name": "Tiramisu",
+      "description": "Italian coffee dessert",
+      "price": 19.0,
+      "dish_type": 2,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 16,
+    "fields": {
+      "name": "Fish & Chips",
+      "description": "Fried fish with fries",
+      "price": 26.0,
+      "dish_type": 1,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 17,
+    "fields": {
+      "name": "Steak",
+      "description": "Grilled beef steak",
+      "price": 50.0,
+      "dish_type": 1,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 18,
+    "fields": {
+      "name": "Greek Salad",
+      "description": "Fresh vegetables with feta",
+      "price": 18.0,
+      "dish_type": 1,
+      "cooks": [2]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 19,
+    "fields": {
+      "name": "Hot Dog",
+      "description": "Classic street food hot dog",
+      "price": 12.0,
+      "dish_type": 1,
+      "cooks": [1]
+    }
+  },
+  {
+    "model": "catalog.dish",
+    "pk": 20,
+    "fields": {
+      "name": "Brownie",
+      "description": "Chocolate brownie square",
+      "price": 13.0,
+      "dish_type": 2,
+      "cooks": [2]
+    }
+  }
+]

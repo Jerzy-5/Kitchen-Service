@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Cooks{% endblock %}
+
+{% block content %}
+<table border="1" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Username 🧑‍🍳</th>
+            <th>Years of Experience ⭐</th>
+            <th>Actions 🔍</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>{{ object.username }} </td>
+            <td>{{ object.years_of_experience }} </td>
+            <td>
+                <a href="{% url 'admin:index' %}"><button>
+    Edit with Admin Permission
+                    </button>
+</a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+{% endblock %}
